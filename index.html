@@ -67,23 +67,26 @@
           </svg>
         </button>
       </div>
-      <div class="mobile-menu is-open" data-menu>
+      <div class="mobile-menu">
         <div class="container mobile-menu-container">
-          <button class="mobile-menu-close" data-menu-close>Close</button>
-          <nav class="mobile-menu-nav">
-            <ul class="header-list">
-              <li class="header-list-item">
-                <a href="./index.html" class="link current">Studio</a>
-              </li>
-              <li class="header-list-item">
-                <a href="" class="link">Portfolio</a>
-              </li>
-              <li class="header-list-item">
-                <a href="" class="link">Contacts</a>
-              </li>
-            </ul>
-            Navigation
-          </nav>
+          <button class="mobile-menu-close">
+            <svg class="close-btn" width="8" height="8">
+              <use href="./images/icons.svg#icon-close-black-18dp-2-1"></use>
+            </svg>
+          </button>
+
+          <ul class="mobile-header-list">
+            <li class="header-list-item">
+              <a href="./index.html" class="link current">Studio</a>
+            </li>
+            <li class="header-list-item">
+              <a href="" class="link">Portfolio</a>
+            </li>
+            <li class="header-list-item">
+              <a href="" class="link">Contacts</a>
+            </li>
+          </ul>
+
           <address>
             <ul class="contacts-list">
               <li class="header-list-item">
@@ -371,7 +374,7 @@
               </div>
               <div class="service-name-container">
                 <h3 class="service-name">Banking App</h3>
-                <p class="text">App</p>
+                <p class="service-text">App</p>
               </div>
             </li>
             <li class="service-titles-item">
@@ -389,7 +392,7 @@
               </div>
               <div class="service-name-container">
                 <h3 class="service-name">Cashless Payment</h3>
-                <p class="text">Marketing</p>
+                <p class="service-text">Marketing</p>
               </div>
             </li>
             <li class="service-titles-item">
@@ -407,7 +410,7 @@
               </div>
               <div class="service-name-container">
                 <h3 class="service-name">Meditation App</h3>
-                <p class="text">App</p>
+                <p class="service-text">App</p>
               </div>
             </li>
             <li class="service-titles-item">
@@ -425,7 +428,7 @@
               </div>
               <div class="service-name-container">
                 <h3 class="service-name">Taxi Service</h3>
-                <p class="text">Marketing</p>
+                <p class="service-text">Marketing</p>
               </div>
             </li>
             <li class="service-titles-item">
@@ -443,7 +446,7 @@
               </div>
               <div class="service-name-container">
                 <h3 class="service-name">Screen Illustrations</h3>
-                <p class="text">Design</p>
+                <p class="service-text">Design</p>
               </div>
             </li>
             <li class="service-titles-item">
@@ -461,7 +464,7 @@
               </div>
               <div class="service-name-container">
                 <h3 class="service-name">Online Courses</h3>
-                <p class="text">Marketing</p>
+                <p class="service-text">Marketing</p>
               </div>
             </li>
           </ul>
@@ -480,7 +483,7 @@
           </p>
         </div>
         <div class="footer-links">
-          <p class="links-title">Social media</p>
+          <p class="footer-links-title">Social media</p>
           <ul class="footer-social-list">
             <li class="social-item">
               <a class="footer-social-link" href="#"
@@ -533,7 +536,7 @@
         </div>
       </div>
     </footer>
-    <div class="backdrop">
+    <div class="backdrop is-open">
       <div class="modal">
         <button type="button" class="modal-close-btn">
           <svg class="close-icon" width="8" height="8">
