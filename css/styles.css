@@ -874,6 +874,8 @@ button {
   }
 
   .advanteges {
+    margin-left: 16px;
+    margin-right: 16px;
     padding-top: 96px;
     padding-bottom: 96px;
   }
@@ -887,23 +889,52 @@ button {
   .advanteges-list-item {
     flex-basis: calc((100% - 24px) / 2);
   }
-  .names {
-    font-weight: 700;
+  .team-names {
+    font-weight: 500;
     line-height: 1.11111;
-    font-size: 36px;
+    font-size: 20px;
     letter-spacing: 0.02em;
     color: #2e2f42;
-    text-align: left;
+    text-align: center;
     margin-bottom: 8px;
   }
-  .team-member-list {
+  .team-card .team-members-list {
     flex-direction: row;
     flex-wrap: wrap;
-    gap: 24px;
+    justify-content: center;
+    gap: 64px 24px;
   }
+  .team-members-item {
+    max-width: 264px;
+    flex-basis: calc((100% - 64px) / 2);
+  }
+
   .service-titles-list {
     flex-direction: row;
     flex-wrap: wrap;
+    justify-content: center;
+    gap: 72px 24px;
+  }
+  .service-titles-item {
+    gap: 72px 24px;
+  }
+  footer .bottom-container {
+    display: flex;
+    flex-direction: row;
+    gap: 72px;
+    align-items: center;
+  }
+  .info-container {
+    max-width: 264px;
+    text-align: left;
+  }
+  .bottom-form-container {
+    display: flex;
+    align-items: baseline;
+    gap: 16px 24px;
+  }
+  .bottom-form {
+    display: flex;
     gap: 24px;
   }
 }
