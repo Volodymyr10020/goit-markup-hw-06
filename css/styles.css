@@ -744,9 +744,7 @@ button {
   .container {
     max-width: 768px;
   }
-  .header {
-    height: 72px;
-  }
+
   .mobile-menu {
     display: none;
   }
@@ -768,6 +766,9 @@ button {
   .logo-top {
     padding: 24px 0;
     margin-right: 120px;
+  }
+  .header-list-item {
+    margin-bottom: 0;
   }
   .link {
     display: block;
@@ -967,10 +968,12 @@ button {
   }
   .header {
     padding: 0 15px;
-    height: 72px;
   }
   .logo-top {
     margin-right: 76px;
+  }
+  .header-list-item {
+    margin-bottom: 0;
   }
   .contacts-list {
     align-items: center;
