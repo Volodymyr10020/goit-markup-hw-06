@@ -164,6 +164,7 @@ button {
   display: flex;
   flex-direction: column;
   height: 100%;
+  margin-top: 24px;
 }
 
 .mobile-menu-close {
@@ -197,6 +198,9 @@ button {
   font-size: 36px;
   font-weight: 700;
 }
+.header-list-item {
+  margin-bottom: 0;
+}
 .mobile-social-list {
   display: flex;
   align-items: flex-start;
@@ -204,6 +208,11 @@ button {
   flex-direction: row;
   gap: 40px;
   width: 280px;
+}
+.contacts-list {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
 }
 
 /* mobile-main */
@@ -560,7 +569,7 @@ button {
   }
   .modal {
     position: absolute;
-    padding: 72px 24px 24px;
+    padding: 72px 16px 16px;
     top: 50%;
     left: 50%;
     width: 288px;
@@ -609,6 +618,7 @@ button {
     color: #2e2f42;
     margin-top: 24px;
     margin-bottom: 16px;
+    width: 100%;
   }
 
   .modal-form {
@@ -687,7 +697,8 @@ button {
   .checkbox-container {
     display: inline-flex;
     margin-bottom: 24px;
-    width: 360px;
+    margin-right: auto;
+    width: 100%;
   }
   .checkbox-icon {
     display: inline-flex;
@@ -711,6 +722,8 @@ button {
     line-height: 1.17;
     letter-spacing: 0.04em;
     color: #8e8f99;
+  }
+  .privacy-text {
   }
 
   .modal-checkbox:checked + .privacy-checkbox > .checkbox-icon {
@@ -891,8 +904,8 @@ button {
   }
 
   .advanteges {
-    margin-left: 16px;
-    margin-right: 16px;
+    padding-left: 16px;
+    padding-right: 16px;
     padding-top: 96px;
     padding-bottom: 96px;
   }
@@ -970,6 +983,11 @@ button {
   }
   .modal {
     width: 408px;
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+  .checkbox-container {
+    width: 360px;
   }
   .bottom-btn {
     margin-top: 0;
@@ -1076,12 +1094,25 @@ button {
       0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
   }
   .info-container {
-    padding-bottom: 0;
+    padding: 0;
+    margin: 0;
   }
   .footer-links {
     margin-bottom: 0;
+    margin-left: 120px;
+    margin-right: 80px;
   }
-
+  footer .bottom-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 0;
+  }
+  .bottom-form {
+    padding: 0;
+    margin: 0;
+  }
   .modal {
     width: 408px;
   }
