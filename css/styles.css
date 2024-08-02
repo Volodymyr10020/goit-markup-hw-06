@@ -51,7 +51,7 @@ button {
 /* common */
 .container {
   max-width: 320px;
-  padding: 0 auto;
+  padding: 0 16px;
   margin: 0 auto;
 }
 .footer-social-link:hover,
@@ -221,24 +221,19 @@ button {
     padding: 16px;
   }
   .page-title {
-    font-size: 36px;
-    line-height: 1.07;
-    text-align: center;
-    letter-spacing: 0.02em;
-    color: #ffffff;
-    max-width: 496px;
-    padding-bottom: 36px;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  .main-title {
-    font-family: "Roboto", sans-serif;
     font-weight: 700;
     font-size: 36px;
     line-height: 1.11;
     text-align: center;
     letter-spacing: 0.02em;
-    color: #fff;
+    color: #ffffff;
+    max-width: 496px;
+    margin-bottom: 72px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .main-title {
+    font-family: "Roboto", sans-serif;
     background-color: #2e2f42;
     max-width: 100%;
     padding-top: 72px;
@@ -286,13 +281,14 @@ button {
   h3 {
     font-weight: 700;
     font-size: 36px;
-    line-height: 1.2;
+    line-height: 1.11;
     letter-spacing: 0.02em;
     color: #2e2f42;
     text-transform: capitalize;
     text-align: center;
     margin-bottom: 8px;
   }
+
   .advanteges .advanteges-list {
     display: flex;
     flex-direction: column;
@@ -303,6 +299,13 @@ button {
   }
   .advanteges-icon {
     display: none;
+  }
+  .advanteges-text {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #434455;
   }
   /* mobile-team */
   h2 {
@@ -321,14 +324,13 @@ button {
     display: flex;
     padding-bottom: 96px;
   }
-  .names {
-    font-weight: 700;
-    line-height: 24px;
-    font-size: 36px;
+  .team-names {
+    font-weight: 500;
+    line-height: 1.2;
+    font-size: 20px;
     letter-spacing: 0.02em;
     color: #2e2f42;
     text-align: center;
-    padding-bottom: 8px;
   }
   .team-members-container {
     padding-top: 32px;
@@ -340,8 +342,9 @@ button {
     gap: 72px;
   }
   .text {
+    font-weight: 400;
     text-align: center;
-    line-height: 24px;
+    line-height: 1.5;
     font-size: 16px;
     letter-spacing: 0.02em;
   }
@@ -463,6 +466,7 @@ button {
     color: #f4f4fd;
   }
   .text-footer {
+    font-weight: 400;
     max-width: 100%;
     margin-top: 16px;
   }
@@ -486,6 +490,7 @@ button {
     margin-top: 16px;
   }
   .footer-links {
+    font-weight: 500;
     margin-bottom: 72px;
   }
   .bottom-sub {
@@ -723,8 +728,6 @@ button {
     letter-spacing: 0.04em;
     color: #8e8f99;
   }
-  .privacy-text {
-  }
 
   .modal-checkbox:checked + .privacy-checkbox > .checkbox-icon {
     border: none;
@@ -768,7 +771,7 @@ button {
     max-width: 768px;
   }
   .container-header {
-    padding: 0;
+    padding: 0 16px;
   }
 
   .mobile-menu {
@@ -846,8 +849,10 @@ button {
     color: #404bbf;
   }
   .page-title {
-    font-size: 36px;
-    line-height: 1.11;
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-size: 56px;
+    line-height: 1.07;
     text-align: center;
     letter-spacing: 0.02em;
     color: #ffffff;
@@ -857,13 +862,6 @@ button {
     margin-right: auto;
   }
   .main-title {
-    font-family: "Roboto", sans-serif;
-    font-weight: 700;
-    font-size: 56px;
-    line-height: 1.11;
-    text-align: center;
-    letter-spacing: 0.02em;
-    color: #fff;
     background-color: #2e2f42;
     max-width: 100%;
     padding-top: 112px;
@@ -904,8 +902,6 @@ button {
   }
 
   .advanteges {
-    padding-left: 16px;
-    padding-right: 16px;
     padding-top: 96px;
     padding-bottom: 96px;
   }
@@ -918,6 +914,13 @@ button {
   }
   .advanteges-list-item {
     flex-basis: calc((100% - 24px) / 2);
+  }
+  .advanteges-text {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #434455;
   }
   .team-names {
     font-weight: 500;
@@ -948,12 +951,16 @@ button {
   .service-titles-item {
     gap: 72px 24px;
   }
+  .page-footer {
+    padding-left: 108px;
+  }
   footer .bottom-container {
     display: flex;
     flex-direction: row;
-    justify-content: flex-start;
-    gap: 72px;
+    flex-wrap: wrap;
     align-items: center;
+    justify-content: start;
+    padding: 0;
   }
   .info-container {
     max-width: 264px;
@@ -961,7 +968,7 @@ button {
     padding-bottom: 0;
   }
   .bottom-form-container {
-    gap: 16px 24px;
+    margin-top: 72px;
   }
   .bottom-form-title {
     text-align: left;
@@ -975,7 +982,9 @@ button {
     box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
   }
   .footer-links {
+    text-align: left;
     margin-bottom: 32px;
+    margin-left: 24px;
   }
   .bottom-sub {
     display: flex;
@@ -999,7 +1008,7 @@ button {
     max-width: 1158px;
     padding: 0 15px;
   }
-  .header {
+  .container-header {
     padding: 0 15px;
   }
   .logo-top {
@@ -1019,6 +1028,15 @@ button {
     line-height: 1.5;
     letter-spacing: 0.02em;
   }
+  .main-title {
+    padding: 188px;
+  }
+  .page-title {
+    padding-bottom: 0;
+  }
+  .button {
+    margin-top: 48px;
+  }
   .advanteges-icon {
     display: flex;
     align-items: center;
@@ -1036,6 +1054,13 @@ button {
   }
   .advanteges-list-item {
     flex-basis: calc((100% - 72px) / 4);
+  }
+  .advanteges-text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #434455;
   }
   .names {
     font-weight: 500;
@@ -1093,21 +1118,30 @@ button {
     box-shadow: 1px 6px rgba(46, 47, 66, 0.08),
       0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
   }
+  .page-footer {
+    padding: 100px 0;
+  }
   .info-container {
     padding: 0;
-    margin: 0;
+    margin-right: 120px;
+    height: 112px;
   }
   .footer-links {
+    text-align: left;
+    margin-left: 0;
     margin-bottom: 0;
-    margin-left: 120px;
     margin-right: 80px;
   }
   footer .bottom-container {
+    flex-wrap: nowrap;
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
     align-items: center;
     gap: 0;
+  }
+  .bottom-form-container {
+    margin-top: 0;
   }
   .bottom-form {
     padding: 0;
